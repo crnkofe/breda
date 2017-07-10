@@ -1,1 +1,1 @@
-web: flask run -p $PORT
+web: flask run -h "https://breda-reborn.herokuapp.com/" -p $PORT
