@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, request
+import os
 import urllib2, time, re, json, random, traceback
+PORT = os.environ['PORT']
 app = Flask(__name__)
 app.config['DEBUG'] = True
 app.config.update(
-    SERVER_NAME="localhost:80"
+    SERVER_NAME="localhost:{}".format(PORT)
 )
 
 @app.route('/')
@@ -147,4 +149,4 @@ def slack_random(u, c, m):
     else:
         return _pic('http://www.babel.crackerboxpalace.com/gifs/strangelove-wat.gif')
 
-app.run(host='0.0.0.0', port=80)
+app.run(host='0.0.0.0', port=PORT)
