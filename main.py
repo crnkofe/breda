@@ -3,6 +3,9 @@ from flask import Flask, request
 import urllib2, time, re, json, random, traceback
 app = Flask(__name__)
 app.config['DEBUG'] = True
+app.config.update(
+    SERVER_NAME="localhost:80"
+)
 
 @app.route('/')
 def hello():
