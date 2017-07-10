@@ -149,4 +149,5 @@ def slack_random(u, c, m):
     else:
         return _pic('http://www.babel.crackerboxpalace.com/gifs/strangelove-wat.gif')
 
-#app.run(host='0.0.0.0', port=PORT)
+if __name__ == '__main__':
+    app.run(debug=True, use_reloader=True, port=PORT)
