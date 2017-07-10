@@ -2,7 +2,7 @@
 from flask import Flask, request
 import os
 import urllib2, time, re, json, random, traceback
-PORT = os.environ['PORT']
+PORT = int(os.environ['PORT'])
 app = Flask(__name__)
 app.config['DEBUG'] = True
 app.config.update(
