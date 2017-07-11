@@ -5,9 +5,6 @@ import urllib2, time, re, json, random, traceback
 PORT = int(os.environ['PORT'])
 app = Flask(__name__)
 app.config['DEBUG'] = True
-app.config.update(
-    SERVER_NAME="localhost:{}".format(PORT)
-)
 
 @app.route('/')
 def hello():
