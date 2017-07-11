@@ -128,7 +128,7 @@ def slack_radar(u, c, m):
 
 
 def slack_where(u, c, m):
-    return '<https://github.com/idioterna/breda|At home, of course.>'
+    return '<https://github.com/crnkofe/breda|At home, of course.>'
 
 
 def slack_wat(u, c, m):
